@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{{ data.title }}</title>
+</head>
+<body class="h-screen w-screen flex flex-col justify-center items-center">
+    <h1 class="font-bold">Hello, World!</h1>
+    <p>Welcome to your Flask application.</p>
+    <p>{{ data.message }}</p>
+    <form action="/submit" method="post">
+        <label for="inputData">Enter some data:</label>
+        <input type="text" id="inputData" name="inputData">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
